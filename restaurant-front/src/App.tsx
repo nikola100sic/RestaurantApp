@@ -1,9 +1,11 @@
-function App() {
+import Layout from "./components/Layout/Layout"
+
+const App = ()=> {
 
   return (
-      <div>
-        <p>My restaurant</p>
-      </div>    
+      <Layout>
+      <p>Home page</p>
+    </Layout>
   )
 }
 
