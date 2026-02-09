@@ -2,11 +2,11 @@ import { FaInstagram } from "react-icons/fa";
 import {
     FooterWrapper,
     FooterContainer,
-    Column,
-    Title,
-    Text,
-    BottomBar,
-    InstaRow,
+    FooterColumn,
+    FooterTitle,
+    FooterText,
+    FooterInstaRow,
+    FooterBottomBar,
 } from "./Footer.styles";
 
 function Footer() {
@@ -14,31 +14,28 @@ function Footer() {
     return (
         <FooterWrapper>
             <FooterContainer>
-                <Column>
-                    <Title>Nicola's Restaurant</Title>
-                    <Text>The best food in city.</Text>
-                </Column>
-
-                <Column>
-                    <Title>Contact</Title>
-                    <Text>Mobile phone: 060 123 456</Text>
-                    <InstaRow>
+                <FooterColumn>
+                    <FooterTitle>Nicola's Restaurant</FooterTitle>
+                    <FooterText>The best food in city.</FooterText>
+                </FooterColumn>
+                <FooterColumn>
+                    <FooterTitle>Contact</FooterTitle>
+                    <FooterText>Mobile phone: 060 123 456</FooterText>
+                    <FooterInstaRow>
                         <span><FaInstagram /></span>
-                        <Text>Nicolas_restaurant2026</Text>
-                    </InstaRow>
-                    <Text>Email: nicolasrestaurantinfo@gmail.com</Text>
-                </Column>
-
-                <Column>
-                    <Title>Address </Title>
-                    <Text>Jovana Jovanovica Zmaja 22</Text>
-                    <Text>Nis</Text>
-                </Column>
+                        <FooterText>Nicolas_restaurant2026</FooterText>
+                    </FooterInstaRow>
+                    <FooterText>Email: nicolasrestaurantinfo@gmail.com</FooterText>
+                </FooterColumn>
+                <FooterColumn>
+                    <FooterTitle>Address </FooterTitle>
+                    <FooterText>Jovana Jovanovica Zmaja 22</FooterText>
+                    <FooterText>Nis</FooterText>
+                </FooterColumn>
             </FooterContainer>
-
-            <BottomBar>
-                <Text> © Nikola, {currentYear}. All rights reserved. </Text>
-            </BottomBar>
+            <FooterBottomBar>
+                <FooterText> © Nikola, {currentYear}. All rights reserved. </FooterText>
+            </FooterBottomBar>
         </FooterWrapper>
     );
 }

@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export const PageWrapper = styled.div`
+export const LayoutPageWrapper = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 `;
 
-export const Main = styled.main`
+export const LayoutMain = styled.main`
   flex: 1;
   background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
 `;

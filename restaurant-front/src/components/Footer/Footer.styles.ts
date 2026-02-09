@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   width: 100%;
-  background-color: #543c15;
+  background-color: #846e4b;
   border-top: 1px solid #e7e8ea;
   z-index: 100;
 `;
@@ -21,25 +21,25 @@ export const FooterContainer = styled.div`
   }
 `;
 
-export const Column = styled.div`
+export const FooterColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-items: center;
 `;
 
-export const Title = styled.span`
+export const  FooterTitle = styled.span`
   color: white;
   font-weight: 600;
   margin-bottom: 4px;
 `;
 
-export const Text = styled.span`
+export const FooterText = styled.span`
   color: #e9e9e9;
   font-size: 15px;
 `;
 
-export const BottomBar = styled.div`
+export const FooterBottomBar = styled.div`
   border-top: 1px solid #222;
   padding: 12px 16px;
   text-align: center;
@@ -50,7 +50,7 @@ export const BottomBar = styled.div`
   justify-content: space-around;
 `;
 
-export const InstaRow = styled.div`
+export const FooterInstaRow = styled.div`
   display: flex;
   align-items: stretch;
   gap: 8px;
