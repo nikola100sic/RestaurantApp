@@ -20,7 +20,7 @@ export const Hero = styled.section`
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.2)
     ),
-    url("public/image1.jpg");
+    url("/image1.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
