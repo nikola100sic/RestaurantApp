@@ -30,19 +30,19 @@ const featured = [
     title: "Pljeskavica",
     desc: "Lepinja, onions, traditional taste",
     price: "750 RSD",
-    img: "public/leskovacka-pljeskavica.jpg",
+    img: "/leskovacka-pljeskavica.jpg",
   },
   {
     title: "Mućkalica",
     desc: "Lepinja, onions, traditional taste",
     price: "820 RSD",
-    img: "public/muckalica.jpg",
+    img: "/muckalica.jpg",
   },
   {
     title: "Ćevapi 10 kom",
     desc: "Lepinja, onions, traditional taste",
     price: "700 RSD",
-    img: "public/cevapi.jpg",
+    img: "/cevapi.jpg",
   },
 ];
 
