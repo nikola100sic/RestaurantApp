@@ -22,7 +22,7 @@ function Footer() {
                     <FooterTitle>Contact</FooterTitle>
                     <FooterText>Mobile phone: 060 123 456</FooterText>
                     <FooterInstaRow>
-                        <span><FaInstagram /></span>
+                        <FaInstagram />
                         <FooterText>Nicolas_restaurant2026</FooterText>
                     </FooterInstaRow>
                     <FooterText>Email: nicolasrestaurantinfo@gmail.com</FooterText>

@@ -8,7 +8,7 @@ export const LayoutPageWrapper = styled.div`
 
 export const LayoutMain = styled.main`
   flex: 1;
-  background-color: antiquewhite;
+  background-color: #faebd7;
   display: flex;
   flex-direction: column;
 `;

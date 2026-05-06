@@ -52,7 +52,7 @@ export const FooterBottomBar = styled.div`
 
 export const FooterInstaRow = styled.div`
   display: flex;
-  align-items: stretch;
-  gap: 8px;
+  align-items: center;
+  gap: 5px;
 `;
 
