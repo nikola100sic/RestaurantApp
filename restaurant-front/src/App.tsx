@@ -3,11 +3,13 @@ import Layout from "./components/Layout/Layout"
 import NotFound from "./pages/PageNotFound/NotFound"
 import HomePage from "./pages/HomePage/HomePage"
 import ContactPage from "./pages/ContactPage/ContactPage"
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 const App = ()=> {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="*" element={<NotFound />} />
