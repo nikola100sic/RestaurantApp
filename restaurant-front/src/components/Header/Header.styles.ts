@@ -3,8 +3,8 @@ import { NavLink as RouterNavLink } from "react-router-dom";
 
 export const HeaderWrapper = styled.header`
   width: 100%;
-  min-height: 86px;
-  padding: 18px 0;
+  min-height: 66px;
+  padding: 10px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@ export const HeaderContainer = styled.div`
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 0 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +50,7 @@ export const HeaderRight = styled.div`
 
 export const HeaderTitle = styled.span`
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -81,8 +81,8 @@ export const HeaderNavLink = styled(RouterNavLink)`
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 17px;
-  padding: 9px 12px;
+  font-size: 16px;
+  padding: 7px 11px;
   border-radius: 999px;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 
@@ -123,10 +123,10 @@ export const HeaderIconLink = styled(RouterNavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 20px;
   background: rgba(255, 255, 255, 0.12);
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 
