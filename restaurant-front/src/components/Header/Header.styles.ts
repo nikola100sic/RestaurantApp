@@ -16,6 +16,7 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const HeaderContainer = styled.div`
+  position: relative;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
@@ -26,9 +27,8 @@ export const HeaderContainer = styled.div`
   gap: 24px;
 
   @media (max-width: 768px) {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 14px;
+    align-items: center;
+    gap: 10px;
   }
 `;
 
@@ -58,11 +58,11 @@ export const HeaderTitle = styled.span`
   line-height: 1.2;
 
   @media (max-width: 520px) {
-    font-size: 19px;
+    font-size: 18px;
   }
 `;
 
-export const HeaderNav = styled.nav`
+export const HeaderNav = styled.nav<{ $isOpen: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,10 +70,18 @@ export const HeaderNav = styled.nav`
   flex: 1;
 
   @media (max-width: 768px) {
-    order: 3;
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    position: absolute;
+    top: 52px;
+    left: 16px;
+    right: 16px;
+    display: ${({ $isOpen }) => ($isOpen ? "grid" : "none")};
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(88, 62, 27, 0.96);
+    box-shadow: 0 16px 32px rgba(60, 40, 8, 0.28);
+    backdrop-filter: blur(16px);
   }
 `;
 
@@ -115,6 +123,11 @@ export const HeaderNavLink = styled(RouterNavLink)`
     color: #fbe692;
     background: rgba(255, 255, 255, 0.12);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px 12px;
+  }
 `;
 
 export const HeaderIconLink = styled(RouterNavLink)`
@@ -141,6 +154,30 @@ export const HeaderIconLink = styled(RouterNavLink)`
 
   &.active {
     color: #fbe692;
+  }
+`;
+
+export const HeaderMenuButton = styled.button`
+  display: none;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 768px) {
+    display: inline-flex;
   }
 `;
 
