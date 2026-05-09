@@ -17,12 +17,6 @@ export const NotFoundWrapper = styled.div`
   background-position: center;
 `;
 
-export const NotFoundTitle = styled.h1`
-  font-size: 72px;
-  margin: 0;
-  color: #3c2808;
-`;
-
 export const NotFoundText = styled.p`
   max-width: 520px;
   margin: 12px 0 0;

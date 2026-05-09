@@ -111,8 +111,6 @@ const ContactPage = () => {
               src="https://www.openstreetmap.org/export/embed.html?bbox=21.875%2C43.30%2C21.93%2C43.34&layer=mapnik&marker=43.3209%2C21.8958"
             />
             <MapNote>
-              This map points to a sample location in Nis and can be replaced
-              with the exact restaurant address later.
             </MapNote>
           </ContactCard>
         </ContactGrid>
