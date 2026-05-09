@@ -4,6 +4,7 @@ import NotFound from "./pages/PageNotFound/NotFound"
 import HomePage from "./pages/HomePage/HomePage"
 import ContactPage from "./pages/ContactPage/ContactPage"
 import MenuPage from "./pages/MenuPage/MenuPage"
+import AboutPage from "./pages/AboutPage/AboutPage"
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 const App = ()=> {
@@ -16,6 +17,7 @@ const App = ()=> {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<HomePage/>}/>
           <Route path="/menu" element={<MenuPage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
         </Routes>
     </Layout>
