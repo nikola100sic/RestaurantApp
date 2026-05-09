@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink as RouterNavLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 export const HeaderWrapper = styled.header`
   width: 100%;
@@ -48,7 +49,7 @@ export const HeaderRight = styled.div`
   }
 `;
 
-export const HeaderTitle = styled.span`
+export const HeaderTitle = styled(RouterLink)`
   color: white;
   font-size: 20px;
   font-weight: 600;
@@ -56,6 +57,13 @@ export const HeaderTitle = styled.span`
   align-items: center;
   gap: 8px;
   line-height: 1.2;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    color: #fbe692;
+    transform: translateY(-1px);
+  }
 
   @media (max-width: 520px) {
     font-size: 18px;
