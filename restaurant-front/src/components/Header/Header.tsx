@@ -21,7 +21,9 @@ function Header() {
         <HeaderWrapper>
             <HeaderContainer>
                 <HeaderLeft>
-                    <HeaderTitle><MdOutlineRestaurant /> Nicola's Restaurant</HeaderTitle>
+                    <HeaderTitle to="/" onClick={closeMenu}>
+                        <MdOutlineRestaurant /> Nicola's Restaurant
+                    </HeaderTitle>
                 </HeaderLeft>
                 <HeaderNav $isOpen={isMenuOpen}>
                     <HeaderNavLink to="/" onClick={closeMenu}>Home</HeaderNavLink>
