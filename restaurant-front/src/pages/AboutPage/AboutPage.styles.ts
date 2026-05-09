@@ -105,7 +105,7 @@ export const ImagePanel = styled.div`
   border-radius: 12px;
   background:
     linear-gradient(rgba(31, 20, 5, 0.12), rgba(31, 20, 5, 0.28)),
-    url("/image2.jpg");
+    url("/about-restaurant-guests.png");
   background-size: cover;
   background-position: center;
   box-shadow: 0 18px 36px rgba(60, 40, 8, 0.18);
