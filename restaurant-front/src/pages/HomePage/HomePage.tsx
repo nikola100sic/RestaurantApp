@@ -27,21 +27,21 @@ import {
 
 const featured = [
   {
-    title: "Pljeskavica",
-    desc: "Lepinja, onions, traditional taste",
-    price: "750 RSD",
+    title: "Leskovac Pljeskavica",
+    desc: "Spiced grilled patty with urnebes salad and fries",
+    price: "1,150 RSD",
     img: "/leskovacka-pljeskavica.jpg",
   },
   {
-    title: "Mućkalica",
-    desc: "Lepinja, onions, traditional taste",
-    price: "820 RSD",
+    title: "Muckalica",
+    desc: "Slow simmered pork, peppers and tomatoes with warm lepinja",
+    price: "1,280 RSD",
     img: "/muckalica.jpg",
   },
   {
-    title: "Ćevapi 10 kom",
-    desc: "Lepinja, onions, traditional taste",
-    price: "700 RSD",
+    title: "Cevapi 10 pcs",
+    desc: "Beef cevapi, chopped onion, kajmak and lepinja",
+    price: "980 RSD",
     img: "/cevapi.jpg",
   },
 ];
@@ -52,10 +52,10 @@ function HomePage() {
       <Container>
         <Hero>
           <HeroContent>
-            <HeroTitle>Nicola’s Restaurant</HeroTitle>
+            <HeroTitle>Nicola's Restaurant</HeroTitle>
             <HeroText>
-              Authentic taste, fresh ingredients and warm atmosphere. Welcome to
-              our kitchen.
+              Serbian grill, warm hospitality and a table made for lingering.
+              Explore bold house dishes inspired by our new menu.
             </HeroText>
             <HeroActions>
               <PrimaryButton to="/menu">View menu</PrimaryButton>
@@ -67,10 +67,10 @@ function HomePage() {
         <Section>
           <SectionTitle>About us</SectionTitle>
           <Text>
-            We serve modern takes on traditional dishes, made with quality
-            ingredients and attention to detail.
+            We serve modern takes on traditional Serbian dishes, made with
+            quality ingredients, charcoal aroma and attention to detail.
           </Text>
-          <InlineLink to="/about">Read more →</InlineLink>
+          <InlineLink to="/about">Read more</InlineLink>
         </Section>
 
         <Section>
@@ -88,7 +88,7 @@ function HomePage() {
             ))}
           </Grid>
           <ViewMenu>
-          <SecondaryButton to="/menu">View menu</SecondaryButton>
+            <SecondaryButton to="/menu">View menu</SecondaryButton>
           </ViewMenu>
         </Section>
         <CTA>

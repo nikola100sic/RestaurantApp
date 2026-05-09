@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Page = styled.div`
   width: 100%;
+  background: #faebd7;
 `;
 
 export const Container = styled.div`
@@ -12,38 +13,52 @@ export const Container = styled.div`
 `;
 
 export const Hero = styled.section`
-  border-radius: 18px;
+  border-radius: 16px;
   overflow: hidden;
-  min-height: 52vh;
+  min-height: 62vh;
 
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.2)
+      90deg,
+      rgba(25, 14, 3, 0.9) 0%,
+      rgba(25, 14, 3, 0.72) 42%,
+      rgba(25, 14, 3, 0.18) 100%
     ),
-    url("/image1.jpg");
+    url("/restaurant-hero.png");
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  box-shadow: 0 22px 48px rgba(60, 40, 8, 0.28);
 `;
 
 export const HeroContent = styled.div`
-  padding: 28px;
+  max-width: 680px;
+  padding: 42px;
   color: white;
+
+  @media (max-width: 768px) {
+    padding: 30px 22px;
+  }
 `;
 
 export const HeroTitle = styled.h1`
   margin: 0;
-  font-size: 44px;
+  font-size: 54px;
+  line-height: 1.05;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
 
   @media (max-width: 768px) {
-    font-size: 34px;
+    font-size: 38px;
   }
 `;
 
 export const HeroText = styled.p`
-  margin-top: 10px;
-  font-size: 18px;
+  margin: 14px 0 0;
+  max-width: 560px;
+  font-size: 20px;
+  line-height: 1.55;
+  color: #fff2d8;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
 `;
 
 export const HeroActions = styled.div`
@@ -80,10 +95,10 @@ export const SecondaryButton = styled(Link)`
 `;
 
 export const Section = styled.section`
-    margin-top: 48px;
-    background-color: #ccbda5;
-    padding: inherit;
-    border-radius: 11px;
+  margin-top: 48px;
+  background-color: #ccbda5;
+  padding: 28px;
+  border-radius: 10px;
 `;
 
 export const SectionTitle = styled.h2`
@@ -126,9 +141,10 @@ export const Grid = styled.div`
 `;
 
 export const Card = styled.div`
-  border-radius: 14px;
+  border-radius: 10px;
   overflow: hidden;
   background: white;
+  box-shadow: 0 14px 28px rgba(60, 40, 8, 0.16);
 `;
 
 export const CardImage = styled.img`
@@ -139,18 +155,20 @@ export const CardImage = styled.img`
 `;
 
 export const CardBody = styled.div`
-  padding: 12px 14px;
+  padding: 16px;
 `;
 
 export const CardTitle = styled.div`
   font-weight: 700;
   color: #3c2808;
+  font-size: 17px;
 `;
 
 export const CardDesc = styled.div`
   margin-top: 6px;
-  color: #666;
+  color: #6a5130;
   font-size: 14px;
+  line-height: 1.45;
 `;
 
 export const CardPrice = styled.div`
